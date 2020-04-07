@@ -25,7 +25,7 @@ Add `zinky` to the plugins section of your `.eslintrc` configuration file. You c
 ```json
 {
     "plugins": [
-        "zinky/eslint"
+        "zinky"
     ]
 }
 ```
