@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-zinky",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "this plugin is aimed to contain eslint rules specific to ZinkyJS",
   "keywords": [
     "eslint",
