@@ -1,0 +1,27 @@
+{
+  "name": "eslint-plugin-zinky-eslint",
+  "version": "0.0.0",
+  "description": "this plugin is aimed to contain eslint rules specific to ZinkyJS",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "burawi",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "mocha": "^7.1.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
