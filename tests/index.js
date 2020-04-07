@@ -9,7 +9,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-const rule = require("../lib/rules/zinky-id-length");
+const rule = require("../lib/rules/id-length");
 const { RuleTester }= require("eslint");
 
 //------------------------------------------------------------------------------
@@ -20,7 +20,7 @@ const ruleTester = new RuleTester();
 const tooShortError = { messageId: "tooShort", type: "Identifier" };
 const tooLongError = { messageId: "tooLong", type: "Identifier" };
 
-ruleTester.run("zinky-id-length", rule, {
+ruleTester.run("id-length", rule, {
     valid: [
         "var xyz;",
         "var xy = 1;",

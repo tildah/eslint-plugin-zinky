@@ -1,4 +1,4 @@
-# eslint-plugin-zinky-eslint
+# eslint-plugin-zinky
 
 this plugin is aimed to contain eslint rules specific to ZinkyJS
 
@@ -10,22 +10,22 @@ You'll first need to install [ESLint](http://eslint.org):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-zinky-eslint`:
+Next, install `eslint-plugin-zinky`:
 
 ```
-npm install eslint-plugin-zinky-eslint --save-dev
+npm install eslint-plugin-zinky --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-zinky-eslint` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-zinky` globally.
 
 ## Usage
 
-Add `zinky-eslint` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `zinky` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "zinky-eslint"
+        "zinky/eslint"
     ]
 }
 ```
@@ -36,14 +36,14 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "zinky-eslint/rule-name": 2
+        "zinky/rule-name": 2
     }
 }
 ```
 
 ## Supported Rules
 
-### `zinky-id-length`
+### `id-length`
 
 This rule behaves just like [`id-length`](https://eslint.org/docs/rules/id-length) native rule, taking into account, however, some ZinkyJS specificities.
 
@@ -55,7 +55,7 @@ This rule behaves just like [`id-length`](https://eslint.org/docs/rules/id-lengt
 Code example:
 
 ```javascript
-/*eslint zinky-id-length: ["error", { "max": 5 }]*/
+/*eslint zinky/id-length: ["error", { "max": 5 }]*/
 
 GET_abc() {} // ✔ is VALID because "abc" has a length less than 5
 

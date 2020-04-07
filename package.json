@@ -1,11 +1,12 @@
 {
-  "name": "eslint-plugin-zinky-eslint",
+  "name": "eslint-plugin-zinky",
   "version": "0.0.3",
   "description": "this plugin is aimed to contain eslint rules specific to ZinkyJS",
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "zinky"
   ],
   "author": "burawi",
   "main": "lib/index.js",
