@@ -45,7 +45,7 @@ Then configure the rules you want to use under the rules section.
 
 ### `zinky-id-length`
 
-This rules behaves just like [`id-length`](https://eslint.org/docs/rules/id-length) native rule, taking into account, however, some ZinkyJS specificities.
+This rule behaves just like [`id-length`](https://eslint.org/docs/rules/id-length) native rule, taking into account, however, some ZinkyJS specificities.
 
 1. Skips method prefixes in operations (`GET_`, `POST_`, ...)
 2. Does not check `BEFORE` and `AFTER` hooks.
