@@ -55,13 +55,13 @@ This rule behaves just like [`id-length`](https://eslint.org/docs/rules/id-lengt
 Code example:
 
 ```javascript
-/*eslint id-length: ["error", { "max": 5 }]*/
+/*eslint zinky-id-length: ["error", { "max": 5 }]*/
 
-GET_abc() {} // is VALID because "abc" has a length less than 5
+GET_abc() {} // ✔ is VALID because "abc" has a length less than 5
 
-GET_abcdef() {} // is NOT VALID because "abcdef" has a length greater than 5
+GET_abcdef() {} // ✘ is NOT VALID because "abcdef" has a length greater than 5
 
-BEFORE_GET_abcdef() // does NOT cause an ERROR. Because it will not be checked
+BEFORE_GET_abcdef() // ✔ does NOT cause an ERROR. Because it will not be checked
 ```
 
 
