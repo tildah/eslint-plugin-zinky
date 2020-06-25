@@ -79,7 +79,8 @@ ruleTester.run("id-length", rule, {
         { code: "let foo = { [a]: 1 };", options: [{ properties: "always" }], parserOptions: { ecmaVersion: 6 } },
         { code: "let foo = { [a + b]: 1 };", options: [{ properties: "always" }], parserOptions: { ecmaVersion: 6 } },
         { code: "function GET_abc() {};", options: [{ min: 3, max: 4 }], parserOptions: { ecmaVersion: 6 } },
-        { code: "function BEFORE_GET_send() {};", options: [{ min: 3, max: 5 }], parserOptions: { ecmaVersion: 6 } }
+        { code: "function BEFORE_GET_send() {};", options: [{ min: 3, max: 5 }], parserOptions: { ecmaVersion: 6 } },
+        { code: "function $$BEFORE_GET_send() {};", options: [{ min: 3, max: 5 }], parserOptions: { ecmaVersion: 6 } }
     ],
     invalid: [
         { code: "var x = 1;", errors: [tooShortError] },
